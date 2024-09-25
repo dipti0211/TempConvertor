@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h2>Temperature converter</h2>
+        <form>
+            <div>
+            <div>
+                <label for="deg">Degrees</label>
+                <input id="deg" step=".0001"  title="Enter a number" name="deg" type="number"  required placeholder="Enter the temperature..." />
+            </div>
+            <div>
+                <label for="type">Type</label>
+                <select name="type" id="type" required title="Select type">
+                    <option value="" selected="true" disabled="disabled">Select type...</option>
+                    <option value="fah">Fahrenheit</option>
+                    <option value="cel">Celsius</option>
+                </select>
+            </div>
+            </div>
+            <div>
+                <label>Result</label>
+                <p id="result">Start your conversion...</p>
+            </div>
+            <button type="submit">
+                Convert
+            </button>
+        </form>
+    </main>
+</body>
+</html>

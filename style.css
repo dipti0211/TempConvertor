@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+main{
+    width: calc(100%*(4/12));
+    padding: 1.5rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 0 10px 5px aliceblue;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+form>div:first-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 1;
+    gap: 1rem;
+}
+form>div:first-of-type div{
+    width: 100%;
+}
+label{
+    display: block;
+    font-size: 1.3rem;
+    padding-bottom: 5px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input{
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 1.5px solid gray;
+    outline:none;
+    font-weight: 500;
+    color: grey;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    transition: all 250ms ease-in-out;
+
+    &:focus{
+        outline:none;
+        color: black;
+        border-bottom-color: black;
+    }
+}
+
+select{
+    width: 100%;
+    padding: 0.5rem 0;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: gray;
+    letter-spacing: 1.5px;
+    transition: all 250ms ease-in-out;
+
+    &:focus{
+        outline: none;
+        border-bottom-color: black;
+    }
+}
+option{
+    font-size: 1rem;
+}
+p{
+    font-size: 1.1rem;
+    color:gray;
+    border-bottom: 1px solid gray;
+    padding: 0.5rem 0;
+    letter-spacing: 1.5px;
+}
+button{
+    padding: 0.5rem 0;
+    font-weight: 600;
+    background-color: #1384F6;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px transparent;
+    transition: all 250ms ease-in-out;
+
+    &:hover{
+        box-shadow: 0 0 8px 2px #58A6F4;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    main{
+        width: calc(100%*(1/2));
+    }
+}
+@media only screen and (max-width: 720px) {
+    main{
+        width: calc(100% * (4/5));
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    main{
+        width: 100%;
+    }
+    form>div:first-of-type{
+      flex-direction: column;
+    }
+}
